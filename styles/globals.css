@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Airfool';
+    src: url('/fonts/Airfool.woff2');
+}
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+    height: 100%;
+    font-family: 'Airfool', serif;
+}
+
+.layout {
+    @apply bg-gradient-to-br from-orange-300 to-orange-800;
+}
